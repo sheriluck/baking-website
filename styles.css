@@ -1,0 +1,177 @@
+body {
+    
+    background-image: url("images/custard\ filling\ cake.jpg");
+    background-size: 100%, 100vh;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(281, 250, 258);
+    padding: 0px;   /*this paddingand margin  is for the header to touch
+                           with the wall of body*/
+     margin: 0px;
+    /* flex-grow: 2; */
+}
+
+
+
+/* this was initialy done by me but gpt told me to do it inthe 
+body rather  doing in bgstyle  
+.bgstyle {
+    background-image: url("images/cake\ sickles.jpg");
+    background-size:cover;
+    background-repeat:repeat;
+    position:center;
+
+    margin: 30px auto;
+     height:auto;
+    width: auto; 
+    border-radius: 3px;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 255, .2);
+} */
+
+header {
+
+    background-color: rgba(87, 19, 80, 0.8);
+    display:inline-flex;
+    color: rgb(148, 140, 147);
+    padding: 0;
+    align-items: center;
+    position:fixed;
+     /*if postion fixed then my text of the hero section and scroll bottom bitton  gets into 
+                     header section   bur with relative it becomes normal*/
+    top: 0px;
+    left: 0;
+    width: 100%; 
+
+}
+
+.title {
+    flex-grow: 1;
+    text-align: left;
+
+}
+
+h1 {
+    margin: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+
+
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 1px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(148, 140, 147);
+    padding: 10px;
+    background-color: rgb(148, 102, 148, 0.6);
+    border-radius: 10px;
+}
+
+
+
+
+li a:hover {
+
+    background-color: rgb(164, 138, 164);
+    color: aliceblue;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.hero {
+    padding-top:10dvh;
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(75, 82, 69);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    height: 30vh;  /*vh is viewport height if i keep it 30 here in the learn more button it keeps 
+                     the navbar list in order even in n small screen if i make it large then it
+                      diturbs the nav bar list items */
+}
+
+.learn-more {
+    display: inline-block;
+    background-color: rgba(117, 51, 117, 0.8);
+    padding: 12px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(148, 162, 188);
+    box-shadow: 5px 5px 9px rgb(165, 102, 134);
+
+}
+
+.learn-more:hover {
+    background-color: rgb(72, 30, 59);
+}
+
+
+
+#top a:hover,
+#bottom a:hover {
+    background-color: rgb(164, 138, 164);
+    color: aliceblue;
+}
+
+#bottom a {
+    position:fixed; /*for fixed position any botton or element 
+    postion remians fixed on the page no matter where we move thr page
+    like msg us or help button*/
+    bottom: 5px;
+    left: 5px;
+    color: rgb(59, 89, 10);
+    text-decoration: none;
+    padding: 5px;
+    /* margin: 10px; */
+    border: 2px solid rgb(119, 91, 104);
+    border-radius: 4px;
+    background-color: rgb(195, 161, 188);
+}
+
+.mainp {
+    text-align: center;
+    color: rgb(75, 82, 69);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+#top a {
+    display:inline-flex; /*with Display inline the button was stuck to the 
+                            header corner.Display inline-box or inline flex 
+                            worked and then marigin-top worked for 76 px which 
+                            is height of header    
+    position: relative;
+    margin-top: 76px;
+    color: rgb(78, 24, 173);
+    text-decoration: none;
+    padding: 5px;
+
+    border: 2px solid rgb(119, 91, 104);
+    border-radius: 4px;
+    background-color: rgb(195, 161, 188);
+}
